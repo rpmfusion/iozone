@@ -3,7 +3,7 @@
 Summary: Filesystem benchmarking utility
 Name: iozone
 Version: 3.491
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: Distributable, no modification permitted and Public Domain
 URL: http://www.iozone.org
 Source0: http://www.iozone.org/src/current/iozone%{f_ver}.tgz
@@ -70,6 +70,9 @@ install -p -m644 docs/iozone.1 %{buildroot}/%{_mandir}/man1/
 %{_mandir}/man1/iozone.1*
 
 %changelog
+* Thu Feb 04 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 3.491-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
 * Tue Jan 12 2021 Dominik Mierzejewski <rpm@greysector.net> - 3.491-1
 - update to 3_491
 - drop upstreamed patch
