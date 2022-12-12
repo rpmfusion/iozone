@@ -41,6 +41,7 @@ popd
 %set_build_flags
 export CFLAGS="$CFLAGS -DHAVE_ANSIC_C -DHAVE_PREADV -DHAVE_PWRITEV -fPIE -Wno-unused-but-set-variable"
 pushd src/current
+%make_build clean
 %make_build linux
 popd
 
