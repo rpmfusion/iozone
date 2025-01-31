@@ -39,7 +39,7 @@ popd
 
 %build
 %set_build_flags
-export CFLAGS="$CFLAGS -DHAVE_ANSIC_C -DHAVE_PREADV -DHAVE_PWRITEV -fPIE -Wno-unused-but-set-variable"
+export CFLAGS="$CFLAGS -DHAVE_ANSIC_C -DHAVE_PREADV -DHAVE_PWRITEV -fPIE -Wno-unused-but-set-variable -std=gnu17"
 pushd src/current
 %make_build clean
 %make_build linux
@@ -73,6 +73,7 @@ install -p -m644 docs/iozone.1 %{buildroot}/%{_mandir}/man1/
 %changelog
 * Wed Jan 29 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.506-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
+- Fix build with GCC 15 (Dominik Mierzejewski)
 
 * Fri Aug 02 2024 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.506-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_41_Mass_Rebuild
