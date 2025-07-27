@@ -3,7 +3,7 @@
 Summary: Filesystem benchmarking utility
 Name: iozone
 Version: 3.506
-Release: 4%{?dist}
+Release: 5%{?dist}
 License: Distributable, no modification permitted and Public Domain
 URL: https://www.iozone.org
 Source0: https://www.iozone.org/src/current/iozone%{f_ver}.tar
@@ -71,6 +71,9 @@ install -p -m644 docs/iozone.1 %{buildroot}/%{_mandir}/man1/
 %{_mandir}/man1/iozone.1*
 
 %changelog
+* Sun Jul 27 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.506-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
+
 * Wed Jan 29 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.506-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
 - Fix build with GCC 15 (Dominik Mierzejewski)
