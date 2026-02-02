@@ -3,7 +3,7 @@
 Summary: Filesystem benchmarking utility
 Name: iozone
 Version: 3.508
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: Distributable, no modification permitted and Public Domain
 URL: https://www.iozone.org
 Source0: https://www.iozone.org/src/current/iozone%{f_ver}.tar
@@ -71,6 +71,9 @@ install -p -m644 docs/iozone.1 %{buildroot}/%{_mandir}/man1/
 %{_mandir}/man1/iozone.1*
 
 %changelog
+* Mon Feb 02 2026 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.508-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_44_Mass_Rebuild
+
 * Fri Jan 09 2026 Dominik Mierzejewski <dominik@greysector.net> - 3.508-1
 - update to 3_508
 
